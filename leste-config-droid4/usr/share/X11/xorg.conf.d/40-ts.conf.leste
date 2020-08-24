@@ -1,7 +1,15 @@
 Section "InputClass"
-	Identifier "calibration"
-	MatchProduct "Atmel maXTouch Touchscreen"
+        Identifier      "calibration"
+        MatchProduct    "Atmel maXTouch Touchscreen"
+        Option  "Calibration"   "-5 964 1026 -7"
+        Option  "SwapAxes"      "1"
+        Option "Ignore"         "true"
+EndSection
 
-	Option "Calibration" "-5 964 1026 -7"
-	Option "SwapAxes" "1"
+Section "InputClass"
+        Identifier      "calibration2"
+        MatchProduct    "touchscreen-buttons"
+        Option  "Calibration"   "-5 964 1026 -7"
+        Option  "SwapAxes"      "1"
+        Option "TypeName" "TOUCHSCREEN"
 EndSection
